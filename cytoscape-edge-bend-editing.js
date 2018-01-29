@@ -230,8 +230,8 @@ module.exports = function (params, cy) {
       
       // check if the point represented by {x, y} is inside the bend shape
       function checkIfInsideBendShape(x, y, length, centerX, centerY){
-        var minX = centerX - length / 2;
-        var maxX = centerX + length / 2;
+        var minX = centerX + length / 2;
+        var maxX = centerX + 3 * length / 2;
         var minY = centerY - length / 2;
         var maxY = centerY + length / 2;
         
