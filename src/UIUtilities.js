@@ -205,7 +205,7 @@ module.exports = function (params, cy) {
       // render a bend shape with the given parameters
       function renderBendShape(bendX, bendY, length) {
         // get the top left coordinates
-        var topLeftX = bendX - length / 2;
+        var topLeftX = bendX + length / 2;
         var topLeftY = bendY - length / 2;
         
         // convert to rendered parameters
